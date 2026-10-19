@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ru"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>10 демо-сайтов для бизнеса</title>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Manrope:wght@400;500;600;800&family=Chakra+Petch:wght@500;700&family=Exo+2:wght@500;700&family=Fraunces:wght@600&family=Playfair+Display:wght@600&family=Inter:wght@400;600;800&family=Nunito:wght@600;800&family=Unbounded:wght@500;700&family=Montserrat:wght@500;700;800&family=Cormorant+Garamond:wght@600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:120px}
+body{margin:0;transition:background .3s}
+#app{font:400 16px/1.55 var(--bf);color:var(--ink);padding-bottom:env(safe-area-inset-bottom,0)}
+.sw{position:sticky;top:0;z-index:50;background:#0c0f14;display:flex;gap:8px;overflow-x:auto;padding:10px 12px;scrollbar-width:none}
+.sw::-webkit-scrollbar{display:none}
+.sw button{flex:none;border:1px solid #2a3140;background:#161b24;color:#cfd6e4;border-radius:999px;padding:8px 14px;font:600 14px Manrope,sans-serif;cursor:pointer;white-space:nowrap}
+.sw button.on{background:#fff;color:#0c0f14;border-color:#fff}
+.w{max-width:1100px;margin:0 auto;padding:0 20px}
+section{padding:64px 0}
+h1,h2,h3{font-family:var(--hf);text-transform:var(--up);line-height:1.1;margin:0;letter-spacing:-.01em}
+h2{font-size:clamp(26px,4.2vw,40px);margin-bottom:26px}
+.btn{display:inline-block;border:0;cursor:pointer;background:var(--ac);color:var(--ai);font:700 15px var(--bf);padding:14px 26px;border-radius:var(--r);transition:transform .15s,box-shadow .15s;text-decoration:none}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(0,0,0,.25)}
+.btn.s{padding:9px 18px;font-size:14px}
+:is(.btn,input,select,button):focus-visible{outline:3px solid var(--ac);outline-offset:2px}
+.sh{position:sticky;top:54px;z-index:40;background:var(--sf);border-bottom:1px solid var(--ln);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
+.sh .w{display:flex;align-items:center;gap:20px;height:60px}
+.logo{font:700 20px var(--hf);text-decoration:none;margin-right:auto;text-transform:var(--up)}
+.sh nav{display:flex;gap:22px;font-weight:600;font-size:15px}
+.sh nav a{text-decoration:none;opacity:.75}.sh nav a:hover{opacity:1}
+.tel{font-weight:700;text-decoration:none;white-space:nowrap}
+@media(max-width:820px){.sh nav,.tel{display:none}}
+.hero{position:relative;overflow:hidden;padding:64px 0 76px}
+.hero .w{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center;position:relative}
+.live{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border-radius:999px;background:rgba(128,128,128,.14);font-size:14px;margin-bottom:20px}
+.live i{width:8px;height:8px;border-radius:50%;background:#2fd18b;animation:pu 2s infinite}
+@keyframes pu{0%{box-shadow:0 0 0 0 rgba(47,209,139,.6)}70%,100%{box-shadow:0 0 0 8px transparent}}
+.hero h1{font-size:clamp(34px,6vw,60px);margin-bottom:18px}
+.hero p{font-size:18px;opacity:.82;max-width:46ch;margin:0 0 26px}
+.stats{display:flex;gap:30px;flex-wrap:wrap;margin-top:34px;font-size:14px;opacity:.9}
+.stats b{display:block;font:700 26px var(--hf);color:var(--ac)}
+.art{display:grid;place-items:center;min-height:300px}
+.orb{width:min(340px,76vw);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 30% 25%,var(--ac),transparent 64%),rgba(128,128,128,.14);display:grid;place-items:center;font-size:clamp(96px,18vw,170px);box-shadow:inset 0 0 0 1px rgba(128,128,128,.28);animation:fl 6s ease-in-out infinite;position:relative}
+.orb::after{content:"";position:absolute;inset:-14px;border-radius:50%;border:2px dashed var(--ac);opacity:.5;animation:sp 40s linear infinite}
+@keyframes fl{50%{transform:translateY(-12px)}}@keyframes sp{to{transform:rotate(360deg)}}
+.tire{width:min(340px,76vw);aspect-ratio:1;border-radius:50%;position:relative;background:repeating-conic-gradient(#050b17 0 6deg,#14213a 6deg 12deg);box-shadow:0 30px 60px rgba(0,0,0,.4),0 0 0 3px #1c2b4a;animation:sp 18s linear infinite}
+.tire::before{content:"";position:absolute;inset:9%;border-radius:50%;background:#0a1324;border:4px solid #1f2f50}
+.tire::after{content:"";position:absolute;inset:25%;border-radius:50%;background:repeating-conic-gradient(#dbe3ef 0 16deg,#0f2747 16deg 72deg);border:7px solid #e8eef7}
+.tire i{position:absolute;inset:42%;border-radius:50%;background:var(--ac);z-index:2}
+.pt{position:absolute;top:-30px;animation:fa linear infinite;opacity:.8;pointer-events:none}
+@keyframes fa{to{transform:translateY(560px) rotate(300deg)}}
+@media(max-width:860px){.hero .w{grid-template-columns:1fr}.art{min-height:240px}}
+.sl{display:grid;gap:12px}
+.sr{display:flex;justify-content:space-between;align-items:center;gap:16px;background:var(--sf);border:1px solid var(--ln);border-radius:var(--r);padding:20px 24px}
+.sr b{display:block;font-size:18px}.sr span{color:var(--mu);font-size:15px}
+.sr em{font:700 22px var(--hf);color:var(--ac);font-style:normal;white-space:nowrap}
+@media(max-width:600px){.sr{flex-direction:column;align-items:flex-start;gap:6px}}
+.g{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px}
+.c{background:var(--sf);border:1px solid var(--ln);border-radius:var(--r);padding:24px;text-align:center;transition:transform .2s}
+.c:hover{transform:translateY(-4px)}
+.av{width:76px;height:76px;margin:0 auto 12px;border-radius:50%;background:var(--ac);color:var(--ai);display:grid;place-items:center;font:700 32px var(--hf)}
+.c h3{font-size:19px;margin-bottom:4px}.c p{margin:0 0 12px;color:var(--mu);font-size:15px}
+.pr{font:700 22px var(--hf);color:var(--ac);margin-bottom:12px}
+.f1{text-align:left}.f1 .n{font:700 40px var(--hf);color:var(--ac)}
+.hot{border:2px solid var(--ac);transform:scale(1.03)}
+.q{background:var(--sf);border-left:4px solid var(--ac);border-radius:0 var(--r) var(--r) 0;padding:20px;margin:0}
+.q p{margin:0 0 8px}.q cite{color:var(--mu);font-size:14px;font-style:normal}
+.pf{height:150px;border-radius:calc(var(--r) - 4px);display:grid;grid-template-columns:1fr 1fr;overflow:hidden;margin-bottom:12px;font-size:12px;font-weight:700}
+.pf span{display:grid;place-items:end start;padding:8px;color:#fff;text-transform:uppercase}
+.st{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:16px;counter-reset:s}
+.st li{counter-increment:s;background:var(--sf);border:1px solid var(--ln);border-radius:var(--r);padding:20px}
+.st li::before{content:counter(s);display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--ac);color:var(--ai);font-weight:800;margin-bottom:10px}
+.st b{display:block}.st span{color:var(--mu);font-size:14px}
+.calc{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;background:var(--sf);border:1px solid var(--ln);border-radius:calc(var(--r) + 6px);padding:28px}
+.calc label.l{display:block;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--mu);margin:14px 0 6px}
+.calc label.l:first-child{margin-top:0}
+select,input[type=text],input[type=tel],input[type=date]{width:100%;font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--ln);border-radius:calc(var(--r) - 4px);padding:12px 14px}
+input[type=range]{width:100%;accent-color:var(--ac)}
+.ck{display:flex;gap:10px;align-items:center;padding:11px 13px;border:1px solid var(--ln);border-radius:calc(var(--r) - 4px);margin-bottom:8px;cursor:pointer}
+.ck:has(input:checked){border-color:var(--ac);background:rgba(128,128,128,.1)}
+.ck input{accent-color:var(--ac);width:18px;height:18px}.ck span{margin-left:auto;color:var(--mu);font-size:14px}
+.sm{background:var(--hb);color:var(--hi);border-radius:var(--r);padding:22px;display:flex;flex-direction:column}
+.sm ul{list-style:none;margin:0 0 12px;padding:0;flex:1;min-height:90px;font-size:15px}
+.sm li{display:flex;justify-content:space-between;gap:10px;padding:7px 0;border-bottom:1px dashed rgba(128,128,128,.4)}
+.tt{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:14px}
+.tt b{font:700 32px var(--hf);color:var(--ac)}
+.sm small{opacity:.65;margin-top:10px;font-size:12px}
+@media(max-width:860px){.calc{grid-template-columns:1fr;padding:18px}}
+.bk{display:grid;grid-template-columns:.8fr 1.2fr;gap:36px}
+.inf{display:grid;gap:16px;align-content:start}
+.inf small{display:block;color:var(--mu);text-transform:uppercase;font-size:12px;letter-spacing:.06em}
+.inf div{font-weight:700;font-size:18px}
+.map{height:150px;border-radius:var(--r);border:1px solid var(--ln);background:linear-gradient(var(--ln) 1px,transparent 1px) 0 0/32px 32px,linear-gradient(90deg,var(--ln) 1px,transparent 1px) 0 0/32px 32px,var(--sf);display:grid;place-items:center;font-size:40px}
+.fm{display:grid;gap:12px;background:var(--sf);border:1px solid var(--ln);border-radius:calc(var(--r) + 6px);padding:24px}
+.r2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.ts{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.ts button{font:600 14px var(--bf);color:var(--ink);background:var(--bg);border:1px solid var(--ln);border-radius:10px;padding:9px 0;cursor:pointer}
+.ts button.on{background:var(--ac);border-color:var(--ac);color:var(--ai)}
+.ok{display:none;margin-top:12px;border:2px solid var(--ac);border-radius:var(--r);padding:16px;font-weight:700}
+@media(max-width:860px){.bk{grid-template-columns:1fr}section{padding:46px 0}.r2{grid-template-columns:1fr}}
+.md{position:fixed;inset:0;z-index:100;background:rgba(0,0,0,.65);display:none;place-items:center;padding:16px;-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}
+.md.on{display:grid}.mb{width:min(480px,100%);max-height:92vh;overflow:auto;position:relative}
+.x{position:absolute;right:12px;top:8px;background:none;border:0;color:var(--ink);font-size:30px;cursor:pointer;z-index:2}
+footer{padding:22px 0;border-top:1px solid var(--ln);color:var(--mu);font-size:13px}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style></head>
+<body>
+<div class="sw" id="sw"></div>
+<div id="app"></div>
+<script>
+var PH="+7 (900) 000-00-00";
+var F=function(n){return Math.round(n).toLocaleString("ru-RU")};
+var AREA=function(r){return function(v,L){return [[L.t+", "+v.a+" м²",v.t*v.a]].concat((v.e||[]).map(function(x){return [x[0],x[1]]}))}};
+var N=[
+{id:"barber",e:"💈",nm:"Барбершоп",logo:"BARBER CLUB",md:1,pk:"Мастер",
+ t:{bg:"#1c1e20",sf:"#25282b",ink:"#f2efe8",mu:"#a6a49b",ln:"#3a3d40",ac:"#c9a23f",ai:"#111",hb:"linear-gradient(135deg,#0b0b0c,#2a2c2f 60%,#3b3320)",hi:"#fff",hf:"Oswald,sans-serif",bf:"Manrope,sans-serif",r:"4px",up:"uppercase"},
+ h:["Стрижка, после которой вас узнают","Мужской барбершоп: классика, фейды и опасное бритьё. Мастер подберёт форму под вашу голову и образ.","Записаться"],ico:"✂️",
+ st:[["9 лет","на рынке"],["4 мастера","стаж от 5 лет"],["4,9","средняя оценка"]],
+ s:[["svc","Услуги и цены",[["Мужская стрижка","от 1 500 ₽","Машинка и ножницы, мытьё головы, укладка"],["Стрижка + борода","от 2 400 ₽","Полный образ за один визит"],["Борода и усы","от 1 000 ₽","Моделирование, горячее полотенце"],["Королевское бритьё","от 1 800 ₽","Опасная бритва, паровое полотенце"]]],
+    ["cards","Наши мастера",[["А","Артём","Топ-барбер, фейды"],["М","Макс","Классика и ножницы"],["Д","Денис","Борода и бритьё"],["И","Илья","Мужские и детские"]]]],
+ f:{b:"Записаться",w:"Услуга",dt:1}},
+{id:"tire",e:"🛞",nm:"Шиномонтаж",logo:"ТЕХНОШИНА",tire:1,hg:"calc",
+ t:{bg:"#f1f4f9",sf:"#ffffff",ink:"#0f2747",mu:"#586a84",ln:"#d9e0ec",ac:"#ff7a1a",ai:"#1a0e02",hb:"linear-gradient(135deg,#0f2747,#16355f)",hi:"#fff",hf:"'Chakra Petch','Exo 2',sans-serif",bf:"'Chakra Petch','Exo 2',sans-serif",r:"18px",up:"uppercase"},
+ h:["Шиномонтаж без очередей и сюрпризов","Называем цену до начала работ. Комплект из четырёх колёс занимает около 40 минут.","Узнать цену"],
+ st:[["24/7","без выходных"],["40 мин","комплект колёс"],["0 ₽","диагностика прокола"]],
+ s:[["svc","Услуги и цены",[["Замена шин","от 400 ₽ / колесо","Снятие, монтаж, демонтаж покрышки"],["Балансировка","от 250 ₽ / колесо","На стенде, подбор грузиков"],["Ремонт проколов","от 500 ₽","Жгут или грибок, диагностика бесплатно"]]],
+    ["feat","Работаем круглосуточно",[["Ночью и в праздники","Принимаем без очереди по записи"],["Цена та же","Ночью без наценки"],["Быстро","Комплект из 4 колёс за 40 минут"]]],
+    ["calc","Калькулятор стоимости"]],
+ ci:[{k:"rad",l:"Радиус дисков",t:"sel",o:[["R13–R15",1],["R16–R17",1.2],["R18–R19",1.5],["R20 и больше",1.9]],d:1},{k:"cnt",l:"Сколько колёс",t:"sel",o:[["1",1],["2",2],["4",4]],d:2},{k:"e",l:"Услуги",t:"chk",o:[["Замена шин",400],["Балансировка",250],["Ремонт прокола",500],["Мойка колёс",100]]}],
+ cf:function(v){return v.e.map(function(x){return [x[0]+" × "+v.cnt,Math.round(x[1]*v.rad*v.cnt/10)*10]})},
+ f:{b:"Записаться",w:"Что нужно сделать",dt:1},sl:[0,22,2]},
+{id:"flowers",e:"🌸",nm:"Цветы",logo:"Бутон",pet:1,pk:"Букет",
+ t:{bg:"#fdf2f8",sf:"#ffffff",ink:"#3a2a31",mu:"#8a6f7b",ln:"#f3d6e3",ac:"#c2456b",ai:"#fff",hb:"linear-gradient(135deg,#fdf2f8,#fbd9e6 60%,#e5f1e8)",hi:"#3a2a31",hf:"Fraunces,'Playfair Display',serif",bf:"Manrope,sans-serif",r:"26px",up:"none"},
+ h:["Свежие цветы с доставкой за 2 часа","Собираем букет в день заказа и присылаем фото до отправки.","Выбрать букет"],ico:"💐",hg:"cat",
+ st:[["2 часа","доставка по городу"],["100%","свежесть"],["500+","букетов в месяц"]],
+ s:[["cards","Каталог букетов",[["🌷","Нежность","15 тюльпанов","2 900 ₽"],["🌹","Страсть","25 роз","4 800 ₽"],["🌸","Весна","Пионы и эустома","3 600 ₽"],["🌻","Солнце","Подсолнухи и зелень","2 400 ₽"],["💐","Классика","Микс сезонных цветов","3 200 ₽"],["🪻","Лаванда","Гортензия и лаванда","3 900 ₽"]]],
+    ["feat","Почему мы",[["Свежесть","Цветы приходят с плантации каждое утро"],["Фото до отправки","Покажем готовый букет перед доставкой"],["Доставка за 2 часа","В удобное для вас время"]]]],
+ f:{b:"Оформить заказ",w:"Букет",ad:1,dt:1}},
+{id:"repair",e:"🏠",nm:"Ремонт квартир",logo:"СтройДом",hg:"calc",
+ t:{bg:"#eef2ee",sf:"#ffffff",ink:"#25332b",mu:"#5e6e64",ln:"#d5ded7",ac:"#4f7a63",ai:"#fff",hb:"linear-gradient(135deg,#25332b,#3a5244)",hi:"#fff",hf:"Manrope,sans-serif",bf:"Manrope,sans-serif",r:"16px",up:"none"},
+ h:["Ремонт квартир под ключ с фиксированной сметой","Смета до начала работ и договор с гарантией. Цена не меняется по ходу ремонта.","Рассчитать стоимость"],ico:"🏠",
+ st:[["3 года","гарантия"],["120+","сданных квартир"],["0 ₽","замер и смета"]],
+ s:[["svc","Услуги и цены",[["Косметический","от 4 500 ₽/м²","Покраска, обои, напольное покрытие"],["Капитальный","от 9 000 ₽/м²","Перепланировка, стяжка, электрика"],["Санузел под ключ","от 85 000 ₽","Плитка, сантехника, гидроизоляция"]]],
+    ["port","Портфолио",["Студия 32 м²","Двушка 54 м²","Санузел 6 м²"]],
+    ["steps","Как мы работаем",[["Замер","Бесплатный выезд инженера"],["Смета","Фиксируем цену"],["Договор","Гарантия 3 года"],["Ремонт","Фотоотчёт каждую неделю"],["Сдача","Акт и уборка"]]],
+    ["calc","Рассчитать стоимость"]],
+ ci:[{k:"t",l:"Тип ремонта",t:"sel",o:[["Косметический",4500],["Капитальный",9000],["Дизайнерский",14000]],d:1},{k:"a",l:"Площадь",t:"rng",mn:20,mx:200,st:5,u:"м²",d:54}],cf:AREA(),
+ f:{b:"Получить смету",w:"Комментарий к ремонту"}},
+{id:"dental",e:"🦷",nm:"Стоматология",logo:"Дентал+",
+ t:{bg:"#ffffff",sf:"#f0f9ff",ink:"#0c2a3d",mu:"#557085",ln:"#cfe7f5",ac:"#0284c7",ai:"#fff",hb:"linear-gradient(135deg,#e0f2fe,#ffffff)",hi:"#0c2a3d",hf:"Inter,sans-serif",bf:"Inter,sans-serif",r:"20px",up:"none"},
+ h:["Здоровая улыбка без страха и боли","Современное оборудование, анестезия и честный план лечения без навязанных услуг.","Записаться на приём"],ico:"🦷",
+ st:[["14 лет","опыта клиники"],["12 000+","пациентов"],["5 лет","гарантия на импланты"]],
+ s:[["svc","Услуги и цены",[["Лечение кариеса","от 3 500 ₽","Под анестезией, световая пломба"],["Имплантация","от 38 000 ₽","Под ключ с коронкой"],["Профессиональная чистка","от 4 500 ₽","Ультразвук и Air Flow"]]],
+    ["cards","Наши врачи",[["А","Анна Королёва","Терапевт, стаж 12 лет"],["И","Игорь Мельник","Хирург-имплантолог"],["Е","Елена Власова","Ортодонт"]]],
+    ["rev","Отзывы",[["Впервые не боялась. Всё объяснили и показали план лечения.","Марина"],["Поставили имплант, через неделю уже забыл о нём.","Сергей"],["Дети идут сюда без слёз.","Ольга"]]]],
+ f:{b:"Записаться на приём",w:"Что беспокоит",dt:1}},
+{id:"clean",e:"🧼",nm:"Клининг",logo:"Чисто24",hg:"calc",
+ t:{bg:"#ecfdf5",sf:"#ffffff",ink:"#0b3b2e",mu:"#4f7a6b",ln:"#c9eedd",ac:"#10b981",ai:"#05261c",hb:"linear-gradient(135deg,#d1fae5,#ecfdf5)",hi:"#0b3b2e",hf:"Nunito,sans-serif",bf:"Nunito,sans-serif",r:"22px",up:"none"},
+ h:["Профессиональная уборка за 2 часа","Бригада с оборудованием и профессиональной химией. Сдаём уборку по чек-листу.","Рассчитать уборку"],ico:"✨",
+ st:[["2 часа","квартира до 60 м²"],["100%","чек-лист сдачи"],["24 часа","гарантия на повтор"]],
+ s:[["svc","Услуги и цены",[["Поддерживающая","от 90 ₽/м²","Пыль, полы, санузел, кухня"],["Генеральная","от 160 ₽/м²","Всё до блеска, включая труднодоступные места"],["После ремонта","от 230 ₽/м²","Строительная пыль и следы ремонта"]]],
+    ["calc","Калькулятор стоимости"]],
+ ci:[{k:"t",l:"Тип уборки",t:"sel",o:[["Поддерживающая",90],["Генеральная",160],["После ремонта",230]],d:1},{k:"a",l:"Площадь",t:"rng",mn:20,mx:250,st:5,u:"м²",d:60},{k:"e",l:"Дополнительно",t:"chk",o:[["Мытьё окон",1500],["Химчистка дивана",2500],["Мытьё холодильника",700]]}],cf:AREA(),
+ f:{b:"Заказать уборку",w:"Адрес и пожелания",dt:1}},
+{id:"move",e:"🚚",nm:"Грузоперевозки",logo:"ГАЗЕЛЬ-ЭКСПРЕСС",hg:"calc",
+ t:{bg:"#121212",sf:"#1d1d1d",ink:"#ffffff",mu:"#b5b5b5",ln:"#333333",ac:"#ffd400",ai:"#111",hb:"linear-gradient(135deg,#000,#262626)",hi:"#fff",hf:"'Bebas Neue',Oswald,sans-serif",bf:"Manrope,sans-serif",r:"6px",up:"uppercase"},
+ h:["Переезд за один день. Подадим машину за час","Газели с кузовом до 5 метров и опытные грузчики. Цена фиксируется заранее.","Рассчитать переезд"],ico:"🚚",
+ st:[["1 час","подача машины"],["24/7","без выходных"],["500+","переездов в год"]],
+ s:[["svc","Услуги и цены",[["Квартирный переезд","от 1 400 ₽/час","Машина и бережная погрузка"],["Грузчики","от 700 ₽/час","Аккуратно, с упаковкой"],["Вывоз мусора","от 2 500 ₽","Погрузим и вывезем на полигон"]]],
+    ["feat","Работаем 24/7",[["Круглосуточно","Заказы ночью и в праздники"],["Подача за час","В пределах города"],["Фиксированная цена","Называем до начала работ"]]],
+    ["calc","Калькулятор переезда"]],
+ ci:[{k:"m",l:"Машина",t:"sel",o:[["Газель 3 м",1400],["Газель 4 м",1700],["Газель 5 м",2000]]},{k:"p",l:"Грузчики",t:"sel",o:[["Без грузчиков",0],["1 грузчик",1],["2 грузчика",2],["3 грузчика",3]],d:1},{k:"h",l:"Время работы",t:"rng",mn:2,mx:10,st:1,u:"ч",d:3}],
+ cf:function(v,L){var r=[[L.m+" × "+v.h+" ч",v.m*v.h]];if(v.p)r.push([L.p+" × "+v.h+" ч",v.p*700*v.h]);return r},
+ f:{b:"Заказать машину",w:"Откуда и куда",dt:1},sl:[0,22,2]},
+{id:"gym",e:"💪",nm:"Фитнес",logo:"POWER",pk:"Абонемент",
+ t:{bg:"#0a1530",sf:"#12214a",ink:"#ffffff",mu:"#a9b4d0",ln:"#25376b",ac:"#b6f03a",ai:"#0a1530",hb:"linear-gradient(135deg,#0a1530,#1b2f68)",hi:"#fff",hf:"Unbounded,sans-serif",bf:"Manrope,sans-serif",r:"20px",up:"uppercase"},
+ h:["Сила начинается с первого шага","Тренажёрный зал, групповые программы, бассейн и бокс. Первая тренировка бесплатно.","Записаться на пробную"],ico:"🏋️",hg:"plans",
+ st:[["1200 м²","зал и бассейн"],["15","тренеров"],["6:00–24:00","ежедневно"]],
+ s:[["svc","Направления и расписание",[["Тренажёрный зал","от 2 500 ₽/мес","Ежедневно 6:00–24:00"],["Групповые программы","от 3 200 ₽/мес","Пн, Ср, Пт · 19:00"],["Бассейн","от 3 800 ₽/мес","Вт, Чт, Сб · 8:00–22:00"],["Бокс","от 4 000 ₽/мес","Пн, Ср · 20:00"]]],
+    ["cards","Наши тренеры",[["В","Виктор","Силовые, 8 лет"],["Р","Руслан","Бокс, КМС"],["А","Алина","Групповые, йога"],["Д","Дмитрий","Плавание"]]],
+    ["plans","Абонементы",[["Разовое","600 ₽","1 посещение, без записи"],["Месяц","3 500 ₽","Безлимит, 1 заморозка",1],["Год","29 900 ₽","Безлимит, 3 заморозки, 2 персональные"]]]],
+ f:{b:"Записаться",w:"Абонемент или направление",dt:1},sl:[7,21,2]},
+{id:"wash",e:"🚗",nm:"Автомойка",logo:"Aqua Shine",
+ t:{bg:"#ffffff",sf:"#f0f9ff",ink:"#0b2a3f",mu:"#547085",ln:"#cfe8f7",ac:"#0ea5e9",ai:"#fff",hb:"linear-gradient(135deg,#e0f2fe,#ffffff)",hi:"#0b2a3f",hf:"Montserrat,sans-serif",bf:"Montserrat,sans-serif",r:"22px",up:"none"},
+ h:["Чистая машина за 15 минут","Бесконтактная мойка, пена и воск. Без очереди по записи.","Записаться на мойку"],ico:"🚗",
+ st:[["15 мин","экспресс-мойка"],["4 поста","без очередей"],["от 450 ₽","экспресс"]],
+ s:[["svc","Услуги и цены",[["Мойка кузова","от 600 ₽","Бесконтактная, с сушкой"],["Химчистка салона","от 6 500 ₽","Сиденья, потолок, коврики"],["Полировка","от 8 000 ₽","Восстанавливаем блеск кузова"]]],
+    ["feat","Экспресс-мойка",[["15 минут","Кузов и коврики, пока вы пьёте кофе"],["От 450 ₽","Фиксированная цена за класс авто"],["Без записи","Заезжайте в удобное время"]]]],
+ f:{b:"Записаться",w:"Услуга и марка авто",dt:1}},
+{id:"salon",e:"💅",nm:"Салон красоты",logo:"Rosé",pk:"Мастер",
+ t:{bg:"#fff7f9",sf:"#ffffff",ink:"#5a2a3b",mu:"#98707e",ln:"#f4dbe3",ac:"#e58aa5",ai:"#3b1626",hb:"linear-gradient(135deg,#fff0f4,#f8d3de)",hi:"#5a2a3b",hf:"'Cormorant Garamond',serif",bf:"Manrope,sans-serif",r:"26px",up:"none"},
+ h:["Красота, в которой приятно быть","Маникюр, педикюр и стрижки в тёплой атмосфере. Подберём образ специально для вас.","Записаться"],ico:"💅",
+ st:[["8 лет","в красоте"],["6","мастеров"],["4,9","оценка гостей"]],
+ s:[["svc","Услуги и цены",[["Маникюр + покрытие","от 2 200 ₽","Гель-лак, уход за кутикулой"],["Педикюр","от 2 800 ₽","Аппаратный, с покрытием"],["Стрижка и укладка","от 2 000 ₽","Мытьё, стрижка, укладка"]]],
+    ["cards","Наши мастера",[["Е","Екатерина","Мастер маникюра"],["А","Анастасия","Стилист-парикмахер"],["К","Кристина","Педикюр"]]]],
+ f:{b:"Записаться",w:"Услуга",dt:1}}
+];
+var app=document.getElementById("app"),sw=document.getElementById("sw"),cur=0;
+N.forEach(function(n,i){var b=document.createElement("button");b.textContent=n.e+" "+n.nm;b.onclick=function(){show(i)};sw.appendChild(b)});
+
+function form(n){
+  var f=n.f,h='<div class="fm" id="fm"><div class="r2"><input type="text" id="nm" placeholder="Ваше имя" aria-label="Имя"><input type="tel" id="ph" placeholder="Телефон" aria-label="Телефон"></div>';
+  if(f.ad)h+='<input type="text" id="ad" placeholder="Адрес доставки" aria-label="Адрес">';
+  h+='<input type="text" id="wk" placeholder="'+f.w+'" aria-label="'+f.w+'">';
+  if(f.dt)h+='<input type="date" id="dt" aria-label="Дата"><div class="ts" id="ts"></div>';
+  return h+'<button class="btn" id="sd" type="button">'+f.b+'</button></div><div class="ok" id="ok" role="status"></div>';
+}
+function sec(n,s,i){
+  var ty=s[0],h='<section id="'+(ty=="calc"?"calc":"s"+i)+'"><div class="w"><h2>'+s[1]+'</h2>';
+  if(ty=="svc")h+='<div class="sl">'+s[2].map(function(x){return '<div class="sr"><div><b>'+x[0]+'</b><span>'+x[2]+'</span></div><em>'+x[1]+'</em></div>'}).join("")+'</div>';
+  if(ty=="cards")h+='<div class="g">'+s[2].map(function(x){return '<div class="c">'+(x[0].length<3&&/[А-Яа-яA-Za-z]/.test(x[0])?'<div class="av">'+x[0]+'</div>':'<div style="font-size:54px;margin-bottom:8px">'+x[0]+'</div>')+'<h3>'+x[1]+'</h3><p>'+x[2]+'</p>'+(x[3]?'<div class="pr">'+x[3]+'</div><button class="btn s" data-pk="'+x[1]+'">Выбрать</button>':'')+'</div>'}).join("")+'</div>';
+  if(ty=="feat")h+='<div class="g">'+s[2].map(function(x,j){return '<div class="c f1"><div class="n">0'+(j+1)+'</div><h3>'+x[0]+'</h3><p style="margin:6px 0 0">'+x[1]+'</p></div>'}).join("")+'</div>';
+  if(ty=="plans")h+='<div class="g">'+s[2].map(function(x){return '<div class="c'+(x[3]?' hot':'')+'"><h3>'+x[0]+'</h3><div class="pr" style="font-size:32px;margin:12px 0">'+x[1]+'</div><p>'+x[2]+'</p><button class="btn s" data-pk="'+x[0]+'">Выбрать</button></div>'}).join("")+'</div>';
+  if(ty=="steps")h+='<ol class="st">'+s[2].map(function(x){return '<li><b>'+x[0]+'</b><span>'+x[1]+'</span></li>'}).join("")+'</ol>';
+  if(ty=="rev")h+='<div class="g">'+s[2].map(function(x){return '<blockquote class="q"><p>'+x[0]+'</p><cite>'+x[1]+'</cite></blockquote>'}).join("")+'</div>';
+  if(ty=="port")h+='<div class="g">'+s[2].map(function(x,j){var a=["#7b8a80","#8a8478","#7a8794"][j%3];return '<div class="c" style="text-align:left;padding:14px"><div class="pf"><span style="background:'+a+'">До</span><span style="background:linear-gradient(135deg,var(--ac),#cfe3d6)">После</span></div><b>'+x+'</b></div>'}).join("")+'</div>';
+  if(ty=="calc"){
+    h+='<div class="calc"><div id="ci">'+n.ci.map(function(c){
+      var r='<label class="l" for="c_'+c.k+'">'+c.l+(c.t=="rng"?': <b id="v_'+c.k+'">'+c.d+'</b> '+c.u:'')+'</label>';
+      if(c.t=="sel")r+='<select id="c_'+c.k+'">'+c.o.map(function(o,j){return '<option value="'+o[1]+'"'+(j==c.d?' selected':'')+'>'+o[0]+'</option>'}).join("")+'</select>';
+      if(c.t=="rng")r+='<input type="range" id="c_'+c.k+'" min="'+c.mn+'" max="'+c.mx+'" step="'+c.st+'" value="'+c.d+'">';
+      if(c.t=="chk")r+=c.o.map(function(o,j){return '<label class="ck"><input type="checkbox" data-k="'+c.k+'" data-j="'+j+'"> '+o[0]+'<span>'+F(o[1])+' ₽</span></label>'}).join("");
+      return r}).join("")+'</div><div class="sm"><ul id="ln"></ul><div class="tt"><span>Итого примерно</span><b id="tot">0 ₽</b></div><button class="btn" id="cg">Оставить заявку</button><small>Это ориентир. Точную цену назовём до начала работ.</small></div></div>';
+  }
+  return h+'</div></section>';
+}
+function show(i){
+  cur=i;var n=N[i],t=n.t,k={bg:"bg",sf:"sf",ink:"ink",mu:"mu",ln:"ln",ac:"ac",ai:"ai",hb:"hb",hi:"hi",hf:"hf",bf:"bf",r:"r",up:"up"},css="";
+  for(var x in k)css+="--"+x+":"+t[x]+";";
+  app.style.cssText=css;document.body.style.background=t.bg;document.title=n.nm+" — демо-сайт";
+  var art=n.tire?'<div class="tire"><i></i></div>':'<div class="orb">'+(n.ico||n.e)+'</div>';
+  var html='<header class="sh"><div class="w"><a class="logo" href="#top">'+n.logo+'</a><nav>'+n.s.map(function(s,j){return s[0]=="calc"?'<a href="#calc">Калькулятор</a>':'<a href="#s'+j+'">'+s[1]+'</a>'}).join("")+'</nav><a class="tel" href="tel:+79000000000">'+PH+'</a><button class="btn s" data-go="book">Записаться</button></div></header>'+
+   '<div class="hero" id="top" style="background:'+t.hb+';color:'+t.hi+'"><div class="w"><div><span class="live"><i></i>Принимаем заявки сегодня</span><h1>'+n.h[0]+'</h1><p>'+n.h[1]+'</p><button class="btn" data-go="'+(n.hg||"book")+'">'+n.h[2]+'</button><div class="stats">'+n.st.map(function(s){return '<div><b>'+s[0]+'</b>'+s[1]+'</div>'}).join("")+'</div></div><div class="art">'+art+'</div></div></div>'+
+   n.s.map(function(s,j){return sec(n,s,j)}).join("");
+  var fm=form(n);
+  html+=n.md?'<section id="contact"><div class="w bk"><div class="inf"><h2 style="margin:0">Контакты</h2><div><small>Адрес</small>ул. Примерная, 12</div><div><small>Часы работы</small>Ежедневно 10:00–22:00</div><div><small>Телефон</small>'+PH+'</div></div><div class="map" aria-label="Карта">📍</div></div></section><div class="md" id="md"><div class="mb"><button class="x" id="mx" aria-label="Закрыть">×</button>'+fm.replace('class="fm"','class="fm" style="padding-top:44px"')+'</div></div>'
+   :'<section id="book"><div class="w bk"><div class="inf"><h2 style="margin:0">Запись и контакты</h2><div><small>Адрес</small>ул. Примерная, 12</div><div><small>Часы работы</small>'+(n.sl&&n.sl[0]==0?"Круглосуточно":"Ежедневно 9:00–21:00")+'</div><div><small>Телефон</small>'+PH+'</div></div><div>'+fm+'</div></div></section>';
+  html+='<footer><div class="w">© '+n.logo+'. Демо-версия сайта.</div></footer>';
+  app.innerHTML=html;bind(n);
+  Array.prototype.forEach.call(sw.children,function(b,j){b.className=j==i?"on":""});
+  if(n.pet){var hr=app.querySelector(".hero");for(var p=0;p<14;p++){var s=document.createElement("span");s.className="pt";s.textContent="🌸";s.style.cssText="left:"+Math.random()*100+"%;font-size:"+(14+Math.random()*16)+"px;animation-duration:"+(7+Math.random()*7)+"s;animation-delay:-"+Math.random()*10+"s";hr.appendChild(s)}}
+  location.hash=n.id;window.scrollTo(0,0);
+}
+function bind(n){
+  var $=function(s){return app.querySelector(s)},md=$("#md"),time="",L={},lastCalc="";
+  function go(w){
+    if(w=="calc"&&$("#calc"))return $("#calc").scrollIntoView();
+    if(w=="cat"&&$("#s0"))return $("#s0").scrollIntoView();
+    if(w=="plans"&&$("#s2"))return $("#s2").scrollIntoView();
+    if(md){md.classList.add("on");return}
+    var b=$("#book");if(b)b.scrollIntoView();
+  }
+  app.querySelectorAll("[data-go]").forEach(function(b){b.onclick=function(){go(b.dataset.go)}});
+  if(md){$("#mx").onclick=function(){md.classList.remove("on")};md.onclick=function(e){if(e.target==md)md.classList.remove("on")}}
+  app.querySelectorAll("[data-pk]").forEach(function(b){b.onclick=function(){$("#wk").value=(n.pk||"Заказ")+": "+b.dataset.pk;go("book");if(!md){var w=$("#wk");w.focus({preventScroll:true})}}});
+  if(n.ci){
+    var upd=function(){
+      var v={e:[]};
+      n.ci.forEach(function(c){
+        if(c.t=="chk"){app.querySelectorAll('[data-k="'+c.k+'"]:checked').forEach(function(x){v.e.push(c.o[x.dataset.j])})}
+        else{var el=$("#c_"+c.k);v[c.k]=parseFloat(el.value);if(c.t=="sel")L[c.k]=el.options[el.selectedIndex].text;else $("#v_"+c.k).textContent=el.value}
+      });
+      var r=n.cf(v,L),sum=0;r.forEach(function(x){sum+=x[1]});
+      $("#ln").innerHTML=r.length?r.map(function(x){return "<li><span>"+x[0]+"</span><b>"+F(x[1])+" ₽</b></li>"}).join(""):'<li style="opacity:.6;border:0">Выберите параметры слева</li>';
+      $("#tot").textContent=F(sum)+" ₽";lastCalc=r.map(function(x){return x[0]}).join(", ")+" (≈ "+F(sum)+" ₽)";
+    };
+    $("#ci").addEventListener("input",upd);$("#ci").addEventListener("change",upd);upd();
+    $("#cg").onclick=function(){$("#wk").value="Расчёт: "+lastCalc;go("book")};
+  }
+  var ts=$("#ts"),dt=$("#dt");
+  if(ts){
+    var d=new Date(),sl=n.sl||[9,20,1];
+    dt.min=dt.value=d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");
+    for(var h=sl[0];h<=sl[1];h+=sl[2]){var b=document.createElement("button");b.type="button";b.textContent=String(h).padStart(2,"0")+":00";b.onclick=function(){ts.querySelectorAll("button").forEach(function(x){x.classList.remove("on")});this.classList.add("on");time=this.textContent};ts.appendChild(b)}
+  }
+  $("#sd").onclick=function(){
+    var nm=$("#nm").value.trim(),ph=$("#ph").value.trim(),ok=$("#ok");
+    ok.style.display="block";
+    if(!nm||!ph||(ts&&!time)){ok.textContent="Укажите имя, телефон"+(ts?" и время":"")+", чтобы мы подтвердили заявку.";return}
+    ok.textContent=nm+", заявка принята"+(ts?" на "+dt.value.split("-").reverse().join(".")+" в "+time:"")+". Перезвоним на "+ph+".";
+    $("#fm").style.display="none";
+  };
+}
+var start=N.findIndex(function(n){return n.id==location.hash.slice(1)});show(start<0?0:start);
+</script></body></html>
